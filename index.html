@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Pyramids are not Triangles</title>
+	<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>	
+<div id="main">
+    <h1 class=" title ">Pyramids are not<br />Triangles</h1>
+
+    <h2 class=" subtitle ">A Webcam Experiment using Three.js</h2>
+
+     <div id="navButton">
+        <div id="activateButton" class="button"> I don't have a webcam</div>
+        <div id="hideShowCam" class="button">Please, hide my face!</div>
+    </div>
+
+    <div class="three"></div>
+
+
+
+    <canvas id="inputCanvas" width="320" height="240" ></canvas>
+    <video id="inputVideo" autoplay loop style="display:none"></video>
+
+</div>
+
+    <script src="assets/lib/dat-gui/build/dat.gui.min.js"></script>
+	<script src="assets/lib/jquery/dist/jquery.min.js"></script>
+    <script src="assets/lib/headtrackr/headtrackr.min.js"></script>
+    <script src="assets/lib/greensock/src/minified/TweenMax.min.js"></script>
+	<script src="assets/lib/threejs/build/three.min.js"></script>
+
+    <script src="build/vendors.js"></script>
+    <script src="build/app.min.js"></script>
+</body>
+
+<script >
+
+$(window).load(function() {
+
+    $("#main").fadeIn("slow");
+    setTimeout(function(){
+        $(".title").addClass("animTitle");
+        $(".subtitle").addClass("animSubtitle");
+        
+        $("#activateButton").addClass("animButton");
+    }, 900)
+    
+});
+</script>
+</html>

@@ -1,0 +1,211 @@
+
+@font-face {
+    font-family: 'HaymakerRegular';
+    src: url('fonts/haymaker.eot');
+    src: url('fonts/haymaker.eot') format('embedded-opentype'),
+         url('fonts/haymaker.woff2') format('woff2'),
+         url('fonts/haymaker.woff') format('woff'),
+         url('fonts/haymaker.ttf') format('truetype'),
+         url('fonts/haymaker.svg#HaymakerRegular') format('svg');
+}
+
+
+@font-face {
+    font-family: 'MontserratBold';
+    src: url('fonts/montserrat-bold.eot');
+    src: url('fonts/montserrat-bold.eot') format('embedded-opentype'),
+         url('fonts/montserrat-bold.woff') format('woff'),
+         url('fonts/montserrat-bold.ttf') format('truetype'),
+         url('fonts/montserrat-bold.svg#MontserratBold') format('svg');
+}
+
+@font-face {
+    font-family: 'MontserratRegular';
+    src: url('fonts/montserrat-regular.eot');
+    src: url('fonts/montserrat-regular.eot') format('embedded-opentype'),
+         url('fonts/montserrat-regular.woff2') format('woff2'),
+         url('fonts/montserrat-regular.woff') format('woff'),
+         url('fonts/montserrat-regular.ttf') format('truetype'),
+         url('fonts/montserrat-regular.svg#MontserratRegular') format('svg');
+}
+
+
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+
+h1 {
+
+-webkit-margin-before: 0;
+-webkit-margin-after: 0;
+-webkit-margin-start: 0;
+-webkit-margin-end: 0;
+font-weight: normal;
+}
+
+h2 {
+
+-webkit-margin-before: 0;
+-webkit-margin-after: 0;
+-webkit-margin-start: 0;
+-webkit-margin-end: 0;
+font-weight: normal;
+}
+
+
+#main{
+	display: none;
+}
+
+
+#inputCanvas{
+display: block;
+z-index: 1;
+position: absolute;
+top: 0;
+}
+
+#headtrackerMessageDiv{
+	width:80%;
+	position:absolute;
+	bottom:100px;
+	color: white;
+	left:50%;
+	margin-left:-40%;
+	text-align:center;
+	font-family: HaymakerRegular;
+	font-size: 1em;
+}
+
+.title{
+	font-family: MontserratBold;
+	font-size: 65px;
+	letter-spacing: 5px;
+	color:white;
+	width:80%;
+	position:absolute;
+	top:90px;
+	left:50%;
+	margin-left:-40%;
+	text-align: center;
+	opacity:0;
+
+	-moz-transition:  1s cubic-bezier(0.075, 0.82, 0.165, 1);
+	-webkit-transition:  1s cubic-bezier(0.075, 0.82, 0.165, 1); /* For Safari 3.1 to 6.0 */
+    transition:  1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+
+.subtitle{
+	font-family: MontserratRegular;
+	font-size: 17px;
+	letter-spacing: 5px;
+	color:white;
+	width:80%;
+	position:absolute;
+	top:340px;
+	left:50%;
+	margin-left:-40%;
+	text-align: center;
+	opacity:0;
+
+	-moz-transition:  1s cubic-bezier(0.075, 0.82, 0.165, 1);
+	-webkit-transition:  1s cubic-bezier(0.075, 0.82, 0.165, 1); /* For Safari 3.1 to 6.0 */
+    transition:  1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+
+.animSubtitle{
+	position:absolute;
+	top:165px;
+	opacity:1;
+}
+
+
+.animTitle{
+	position:absolute;
+	top:0px;
+	opacity:1;
+}
+
+
+#navButton{
+	position :absolute;
+	bottom:30px;
+	text-align:center;
+	width:100%;
+}
+
+.animButton{
+
+	opacity:1 !important;
+}
+
+.button{
+	font-family: HaymakerRegular;
+	font-size: 1em;
+	color:#fff;
+	text-align:center;
+	border: 2px solid #fff;
+	width:200px;
+	vertical-align: middle;
+	padding-top:5px;
+	cursor: pointer;
+	
+	-moz-transition:  0.2s; 
+	-webkit-transition:  0.2s; /* For Safari 3.1 to 6.0 */
+    transition:   0.2s;
+
+}
+
+.button:hover{
+	background: #fff;
+	color: #9aacb1;
+}
+
+#activateButton{
+	position:absolute;
+	left:50%;
+	margin-left:-100px;
+	bottom :30px;
+	opacity : 0;
+	-moz-transition: 1s; 
+	-webkit-transition: 1s; /* For Safari 3.1 to 6.0 */
+    transition: 1s;
+
+
+}
+
+
+
+#hideShowCam{
+	position:absolute;
+	left:50%;
+	margin-left:-100px;
+	bottom :30px;
+	display:none;
+
+	-moz-transition: 1s; 
+	-webkit-transition: 1s; /* For Safari 3.1 to 6.0 */
+    transition: 1s;
+}
+
+
+.animButtonShow{
+	left:40% !important;
+}
+
+
+
+
+
+
